@@ -1,3 +1,4 @@
+
 if (typeof PMUtil === "undefined") {
     let globalEval = eval;
 
@@ -90,8 +91,8 @@ if (typeof PMUtil === "undefined") {
        
 
         this.rand = {
-            $currentTimeStamp: function () {dateNow = new Date(); return dateNow.getTime();},
-            $oneMonthLaterTimmStamp: function () {dateNow = new Date(); return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);},
+            $currentTimeStamp: function () {let dateNow = new Date(); return dateNow.getTime();},
+            $oneMonthLaterTimmStamp: function () {let dateNow = new Date(); return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);},
             $randomInt: function (min, max) {
                 if (!min) {
                     min = 0;
