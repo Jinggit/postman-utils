@@ -89,6 +89,7 @@ if (typeof PMUtil === "undefined") {
                 values[key].enabled ? pm.environment.set(values[key].key, values[key].value) : null
         };
        
+        
 
         this.rand = {
             $currentTimeStamp: function () {
