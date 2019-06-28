@@ -92,11 +92,11 @@ if (typeof PMUtil === "undefined") {
 
         this.rand = {
             $currentTimeStamp: function () {
-                var dateNow = new Date(); 
+                let dateNow = new Date(); 
                 return dateNow.getTime();
             },
             $oneMonthLaterTimmStamp: function () {
-                var dateNow = new Date(); 
+                let dateNow = new Date(); 
                 return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);
             },
             $randomInt: function (min, max) {
@@ -110,7 +110,7 @@ if (typeof PMUtil === "undefined") {
                 }
                 return Math.floor(min + Math.random() * (max + 1 - min));
             },
-            $randomStringCa: function (min, max, set = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+            $randomStringC: function (min, max, set = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
                 return this.$randomString(min, max, set)
             },
             $randomStringS: function (min, max, set = 'abcdefghijklmnopqrstuvwxyz') {
