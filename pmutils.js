@@ -110,7 +110,7 @@ if (typeof PMUtil === "undefined") {
                 }
                 return Math.floor(min + Math.random() * (max + 1 - min));
             },
-            $randomStringC: function (min, max, set = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
+            $randomStringCa: function (min, max, set = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') {
                 return this.$randomString(min, max, set)
             },
             $randomStringS: function (min, max, set = 'abcdefghijklmnopqrstuvwxyz') {
