@@ -89,8 +89,8 @@ if (typeof PMUtil === "undefined") {
         };
         
         this.time = {
-            $currentTimeStamp: function () {dateNow = new Date(); return dateNow.getTime()},
-            $oneMonthLaterTimmStamp: function () {dateNow = new Date(); return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30)},
+            $currentTimeStamp: function () {dateNow = new Date(); return dateNow.getTime();},
+            $oneMonthLaterTimmStamp: function () {dateNow = new Date(); return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);},
         }
 
         this.rand = {
