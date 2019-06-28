@@ -99,7 +99,7 @@ if (typeof PMUtil === "undefined") {
                 var dateNow = new Date(); 
                 return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);
             },
-            $randomInt: function (min, max) {
+            $randomInt1: function (min, max) {
                 if (!min) {
                     min = 0;
                     max = 100;
