@@ -91,9 +91,16 @@ if (typeof PMUtil === "undefined") {
        
 
         this.rand = {
-            $currentTimeStamp: function () {
-                let dateNow = new Date(); 
-                return dateNow.getTime();
+            $currentTimeStamp: function (min, max) {
+                if (!min) {
+                    min = 0;
+                    max = 100;
+                }
+                if (!max) {
+                    max = min;
+                    min = 1;
+                }
+                return Math.floor(min + Math.random() * (max + 1 - min));
             },
             $oneMonthLaterTimmStamp: function () {
                 let dateNow = new Date(); 
