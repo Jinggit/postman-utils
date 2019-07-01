@@ -89,9 +89,7 @@ if (typeof PMUtil === "undefined") {
                 values[key].enabled ? pm.environment.set(values[key].key, values[key].value) : null
         };
        
-        
-
-        this.rand = {
+        this.time = {
             $currentTimeStamp: function () {
                 var dateNow = new Date(); 
                 return dateNow.getTime();
@@ -100,6 +98,9 @@ if (typeof PMUtil === "undefined") {
                 var dateNow = new Date(); 
                 return dateNow.getTime()+(1000 * 60 * 60  * 24 * 30);
             },
+        };
+
+        this.rand = {
             $randomInt: function (min, max) {
                 if (!min) {
                     min = 0;
